@@ -1,0 +1,318 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{05CF89B6-9DBD-4089-9F90-A70E5D307EE5}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>WindowsFormsApp1</RootNamespace>
+    <AssemblyName>WindowsFormsApp1</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Demo WindowsForms">
+      <HintPath>..\..\dotnet for google maps\Library\Demo WindowsForms.exe</HintPath>
+    </Reference>
+    <Reference Include="Demo WPF">
+      <HintPath>..\..\dotnet for google maps\Library\Demo WPF.exe</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser">
+      <HintPath>..\..\dotnet for google maps\Library\DotNetBrowser.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetBrowser.Chromium">
+      <HintPath>..\..\dotnet for google maps\Library\DotNetBrowser.Chromium.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp, Version=5.5.11.0, Culture=neutral, PublicKeyToken=8354ae6d2174ddca, processorArchitecture=MSIL">
+      <HintPath>..\packages\iTextSharp.5.5.11\lib\itextsharp.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Devices.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Devices.Designer.cs">
+      <DependentUpon>Devices.cs</DependentUpon>
+    </Compile>
+    <Compile Include="endless.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="endless.Designer.cs">
+      <DependentUpon>endless.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Food.cs" />
+    <Compile Include="Foodstore.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Foodstore.Designer.cs">
+      <DependentUpon>Foodstore.cs</DependentUpon>
+    </Compile>
+    <Compile Include="main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="main.Designer.cs">
+      <DependentUpon>main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="Resources\Resource2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource2.resx</DependentUpon>
+    </Compile>
+    <Compile Include="weather.cs" />
+    <Compile Include="route.cs" />
+    <Compile Include="TimeTable.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TimeTable.Designer.cs">
+      <DependentUpon>TimeTable.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Register.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Devices.resx">
+      <DependentUpon>Devices.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="endless.resx">
+      <DependentUpon>endless.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Foodstore.resx">
+      <DependentUpon>Foodstore.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource1.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources\Resource2.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource2.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TimeTable.resx">
+      <DependentUpon>TimeTable.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="main.resx">
+      <DependentUpon>main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\06f167d.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\36.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\14.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\40.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\25.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\26.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\32.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smart_city_traffic_controller_control_management_signal-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\131660__bertrof__game-sound-correct.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\video_camera_smart_city_device_security_saftey-1281.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\smart_city_hospital_building_treatment_health_help-128.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\215004__ethanolproductions__access-granted.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\241809_suntemple_magic-sfx-for-games.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\im-bg-revolution-of-things2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_dark.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\new_dark%28closeTV1%292.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\green-power-button-symbol-icon-20.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\power-button-icon-8359.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\red-white-power-button-symbol-icon-30.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\106153-3d-glossy-orange-orb-icon-people-things-tv-sc52.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air-condition-icon-png-21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\air-condition-icon-png-21_closed.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_JK_23371.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_JK_23371_DARK_CLOSETV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_JK_23371_DARK_OPENTV.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\small_JK_23371_TV_CLOSED.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KICHEN_OPEN_LIGHTS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\KITCHENCLOSED_LIGHTS.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cute-Ball-Help-icon2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-off-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-on-icon.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\switch-off-icon1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Layer 0.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4300.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4300sda.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\giphy.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\20185__patchen__foot-stomp-c.wav" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
